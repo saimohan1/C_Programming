@@ -157,12 +157,12 @@ display_board(struct tic_tac_toe *board)
 	system("clear");
 	display_header();
 	printf("---------------------------------\n");
-	printf("\t%c | %c | %c\n", board->board[0],
-			board->board[1], board->board[2]);
-	printf("\t%c | %c | %c\n", board->board[3],
-			board->board[4], board->board[5]);
-	printf("\t%c | %c | %c\n", board->board[6],
-			board->board[7], board->board[8]);
+	printf("\t%c | %c | %c\n", board->board[POSITION_0],
+			board->board[POSITION_1], board->board[POSITION_2]);
+	printf("\t%c | %c | %c\n", board->board[POSITION_3],
+			board->board[POSITION_4], board->board[POSITION_5]);
+	printf("\t%c | %c | %c\n", board->board[POSITION_6],
+			board->board[POSITION_7], board->board[POSITION_8]);
 	printf("---------------------------------\n");
 }
 
